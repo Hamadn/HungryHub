@@ -35,6 +35,9 @@ input {
     &-ai-c {
         align-items: center;
     }
+    &-gap {
+        gap: 1.25rem;
+    }
 }
 
 .button {
@@ -46,8 +49,8 @@ input {
 }
 .button_outline {
     padding: 1rem 1.875rem;
-    background-color: transparent;
     border: 2px solid u.$yellow;
     border-radius: 15px;
     cursor: pointer;
+    color: u.$yellow !important;
 }
