@@ -1,0 +1,53 @@
+@use '../util' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+* , *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: u.$font;
+    font-size: u.$font-med;
+    font-weight: 600;
+    background-color: u.$dark;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.button {
+    padding: 1rem 1.875rem;
+    background-color: u.$yellow;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button_outline {
+    padding: 1rem 1.875rem;
+    background-color: transparent;
+    border: 2px solid u.$yellow;
+    border-radius: 15px;
+    cursor: pointer;
+}

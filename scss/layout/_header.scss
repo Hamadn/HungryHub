@@ -1,0 +1,41 @@
+@use "../util/" as u;
+.header {
+
+    nav {
+        padding: 20px;  
+    }
+
+    &__logo {
+
+        img {
+            width: 8.8125rem;
+            height: 1.125rem;
+        }
+
+    }
+
+    &__menu {
+
+        > span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: u.$yellow;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    &__links {
+
+        a {
+            font-size: u.$font-sm;
+        }
+    } 
+
+    &__cta {
+        color: u.$white;  
+    }
+}
