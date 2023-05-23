@@ -39,21 +39,39 @@ input {
         gap: 1.25rem;
     }
 }
+  
+ 
 
 .button {
     padding: 1rem 1.875rem;
+    color: u.$dark !important;
     background-color: u.$yellow;
-    border: 0;
-    border-radius: 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
 }
-.button_outline {
+
+.button:hover {
+    box-shadow: 0px 10px 15px u.$yellow;
+    color: u.$white !important;
+    transform: translateY(-5px);
+  }
+
+
+.button__outline {
     padding: 1rem 1.875rem;
     border: 2px solid u.$yellow;
-    border-radius: 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
     color: u.$yellow !important;
 }
+
+.button__outline:hover {
+    box-shadow: 0px 10px 15px u.$yellow;
+    color: u.$white !important;
+    transform: translateY(-5px);
+  }
 
 .hide-for-mobile {
     @include u.breakpoint-down(medium){
