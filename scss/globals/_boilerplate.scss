@@ -54,3 +54,15 @@ input {
     cursor: pointer;
     color: u.$yellow !important;
 }
+
+.hide-for-mobile {
+    @include u.breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include u.breakpoint-up(large) {
+        display: none;
+    }
+}
