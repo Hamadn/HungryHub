@@ -1,42 +1,122 @@
 @use "../util/" as u;
 .header {
+    position: relative;
+    z-index: 1;
+
+    &.open {
+
+        .header__toggle {
+            > span:first-child {
+                transform: translateY(20px) rotate(45deg);
+            }
+    
+            > span:nth-child(2) {
+                transform: scaleX(0);
+              }
+              
+            > span:last-child{
+                transform: translateY(-20px) rotate(-45deg);
+              }
+        }
+    }
+
+    .overlay {
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(u.$lightyellow, transparent);
+    }
 
     nav {
-        padding: 20px;  
+        position: relative;
+        background-color: u.$dark;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+
     }
+   
 
     &__logo {
 
         img {
             width: 8.8125rem;
-            height: 1.125rem;
+            height: 1.375rem;
+        }
+
+    }
+
+    &__toggle {
+
+        > span {
+            display: block;
+            width: 35px;
+            height: 3px;
+            background-color: u.$yellow;
+            border-radius: 5px;
+            transition: all 300ms ease-in-out;
+            transform-origin: 33px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
         }
 
     }
 
     &__menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1.5rem;
+        background: u.$dark;
+        padding: 1.625rem;
+        border-radius: 6px;
 
-        > span {
+        a {
             display: block;
-            width: 26px;
-            height: 3px;
-            background-color: u.$yellow;
-
-            &:not(:last-child) {
-                margin-bottom: 3px;
-            }
+            padding: 0.625rem;
+            color: u.$white;
+            text-align: center;
         }
     }
 
     &__links {
-
         a {
             font-size: u.$font-sm;
+            color: u.$grey;
+            transition: color 300ms ease-in-out;
+            position: relative;
 
 
             &:not(:last-child){
                 margin-right: 35px;
             }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -34.5px;
+                background-color: u.$yellow;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+
+            }
+            &:hover {
+                color: u.$white;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
         }
     } 
 }
+
