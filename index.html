@@ -5,21 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hungry Hub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/dist/style.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c">
+      <div class="overlay has-fade"></div>
+      
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <img src="/images/Logo.svg" alt="HungryHub" />
         </a>
-        <a href="#" class="header__menu hide-for-desktop">
+        <a href="#" id="hamburgerBtn" class="header__toggle hide-for-desktop">
             <span></span>
             <span></span>
             <span></span>
@@ -38,7 +34,36 @@
         </div>
       </nav>
 
+      <div class="header__menu has-fade">
+        <a href="">Home</a>
+        <a href="">Menu</a>
+        <a href="">Blog</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="">Register</a>
+        <a href="">Sign In</a>
+      </div>
+
     </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__image rotate">
+        </div>
+        <div class="hero__text container--pall">
+          <h1>
+            Hundreds of flavour <br> under one <span>roof.</span>
+          </h1>
+          <p>
+            Savor the journey of culinary excellence with our extraordinary menu, where every dish is crafted with passion, expertise, and the finest ingredients, delivering an unforgettable dining experience that will tantalize your taste buds and nourish your soul.
+          </p>
+          <div class="hero__btn flex flex-gap flex-jc-c">
+            <a href="#" class="button">Order Now</a>
+            <a href="#" class="button__outline">Watch Video</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="/js/index.js"></script>
   </body>
 </html>

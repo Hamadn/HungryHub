@@ -1,4 +1,9 @@
-$font : 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+$font: 'Roboto', sans-serif;
+$font-cav: 'Caveat', cursive;
 
 $font-sm: 0.875rem;
 $font-med: 1.125rem;
+$font-xlg: 3.25rem;

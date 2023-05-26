@@ -1,0 +1,106 @@
+@use "../util" as u;
+
+.hero {
+    overflow: hidden;
+
+    .container {
+        @include u.breakpoint-up(large) {
+          display: grid;
+          position: relative;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+        }
+    }
+
+  &__image {
+    position: relative;
+    min-height: 22rem;
+
+
+    @include u.breakpoint-up(medium){
+        height: 32rem;
+    }
+
+    @include u.breakpoint-up(large) {
+      grid-column-start: 1;
+      grid-column-end:3;
+      height: 50rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url("/images/fast-food.png");
+      background-size: 54%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+
+      @include u.breakpoint-up(medium){
+        background-size: 46%;
+      }
+
+      @include u.breakpoint-up(large) {
+        background-size: 30%;
+        background-position: center center;
+        left: 25%;
+      }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url("/images/wood_1920.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @include u.breakpoint-up(large){
+            left: -20%;
+            right: -20%;
+            width: auto;
+        }
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include u.breakpoint-up(large) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      text-align: left;
+      position: absolute;
+    }
+
+    h1 {
+      font-size: 2.31rem;
+      color: u.$white;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+
+      @include u.breakpoint-up(large) {
+        font-size: u.$font-xlg;
+      }
+
+      > span {
+        font-family: u.$font-cav;
+        color: u.$yellow;
+      }
+
+      p {
+        line-height: 1.5;
+        margin-bottom: 2.25rem;
+      }
+    }
+  }
+  &__btn {
+    @include u.breakpoint-up(large) {
+      justify-content: start;
+    }
+  }
+}
