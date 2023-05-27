@@ -1,19 +1,43 @@
-@use '../util' as u;
+@use "../util" as u;
 
-h1, h2, h3 {
-    margin-top: 0;
-    line-height: 1.1;
-    font-weight: 700;
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.15;
+  color: u.$white;
+  font-weight: 300;
 }
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+
+  @include u.breakpoint-up(large) {
+    font-size: u.$font-xlg;
+  }
+}
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+
+  @include u.breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
 p {
-    margin-top: 0;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
 }
-a, a:visited, a:active {
-    text-decoration: none;
-    color: u.$white;
-
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: u.$white;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
