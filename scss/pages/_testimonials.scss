@@ -1,0 +1,64 @@
+@use "../util/" as u;
+
+.testimonials {
+  width: 100%;
+  background-color: u.$greenishblack;
+}
+
+.testimonial {
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden;
+
+  &__image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    object-position: 40% center;
+    border-radius: 50%;
+    border: 4px solid u.$yellow;
+  }
+
+  &__slide {
+    flex-direction: column;
+    row-gap: 30px;
+
+    p {
+      padding: 0 100px;
+      text-align: center;
+      font-size: u.$font-med;
+      font-weight: 400;
+      color: u.$white;
+      font-family: u.$font-mon;
+    }
+
+    .quote-icon {
+      font-size: 30px;
+      color: u.$yellow;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: u.$font-med;
+      font-weight: 600;
+      color: u.$white;
+      font-family: u.$font-mon;
+    }
+  }
+  &__rating {
+    color: u.$yellow;
+    font-size: u.$font-med;
+  }
+
+  &__next{
+    color: u.$yellow;
+  }
+
+  &__prev{
+    color: u.$yellow;
+  }
+}

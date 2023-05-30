@@ -5,10 +5,17 @@ html {
   font-size: 100%;
 }
 
+:root {
+    --swiper-pagination-color: hsl(45, 94%, 56%);
+}
+
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 body {

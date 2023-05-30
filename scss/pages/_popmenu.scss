@@ -1,0 +1,89 @@
+@use "../util/" as u;
+
+.menus {
+    background-color: u.$blackyellow;
+}
+
+
+.menu {
+
+    &__intro{
+        text-align: center;
+        font-family: u.$font-cav;
+
+
+        h3 {
+            color: u.$yellow;
+        }
+
+
+    }
+
+    &__grid{
+        display: grid;
+        gap: 3rem;
+
+
+        @include u.breakpoint-up(medium){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        
+        @include u.breakpoint-up(large){
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(2,1fr);
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+
+    &__item{
+        border-radius: 20px 20px 10px 10px;
+        overflow: hidden;
+        border: 1px solid u.$lightyellow;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    &__image{
+        height: 20rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__text{
+        background-color: u.$grayishblack;
+        height: 17.5rem;
+
+        @include u.breakpoint-up(large){
+            height: 25rem;
+        }
+    }
+
+    &__title{
+        justify-content: space-between;
+        font-family: u.$font-mon;
+
+        h2 {
+            color: u.$white;
+        }
+        h2:nth-child(2) {
+            color: u.$yellow;
+        }
+    }
+    &__description{
+        font-family: u.$font-mon;
+    }
+    &__rating{
+        background-color: u.$grayishblack;
+    }
+    &__stars{
+        
+        span:not(:last-child) {
+            color: u.$yellow;
+        }
+
+    }
+}

@@ -1,0 +1,65 @@
+@use "../util/" as u;
+
+.feature {
+    background-color: u.$lightgrey;
+    text-align: center;
+
+    &__intro {
+        margin-bottom: 3rem;
+    }
+
+    &__grid {
+        gap: 25px;
+
+        @include u.breakpoint-up(medium){
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+        }
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-radius: 15px;
+        background-color: u.$dark;
+        border: 1px solid u.$lightyellow;
+        background: linear-gradient(45deg, u.$grayishblack, u.$blackyellow);
+
+        @include u.breakpoint-down(small){
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+
+
+    }
+
+    &__icon {
+        margin-bottom: 1.8rem;
+
+        @include u.breakpoint-up(large){
+            margin-bottom: 2.5rem;
+        }
+
+    }
+
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 300;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+
+        @include u.breakpoint-up(large){
+            font-size: 2.1rem;
+        }
+    }
+
+    &__description {
+        line-height: 1.5;
+        font-size: 1.15rem;
+    }
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3,0.35fr);
+}   
