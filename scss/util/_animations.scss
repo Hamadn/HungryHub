@@ -61,5 +61,16 @@
   }
 
 .rotate::after {
-    animation: rotate 4s infinite linear;
+    animation: rotate 10s infinite linear;
 }
+
+@keyframes cdp-in {
+    from {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
