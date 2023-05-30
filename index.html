@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hungry Hub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/dist/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <div class="overlay has-fade"></div>
-      
+
       <nav class="container container--pall flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <img src="/images/Logo.svg" alt="HungryHub" />
         </a>
         <a href="#" id="hamburgerBtn" class="header__toggle hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
         <div class="header__links hide-for-mobile">
           <a href="#">Home</a>
           <a href="#">Menu</a>
           <a href="#">Blog</a>
           <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
+          <a href="contact.html">Contact Us</a>
         </div>
 
         <div class="flex flex-gap flex-jc-sb hide-for-mobile">
-        <a href="#" class="button__outline">Register</a>
-        <a href="#" class="button">Sign In</a>
+          <a href="#" class="button__outline">Register</a>
+          <a href="#" class="button">Sign In</a>
         </div>
       </nav>
 
@@ -39,23 +44,25 @@
         <a href="">Menu</a>
         <a href="">Blog</a>
         <a href="">About Us</a>
-        <a href="">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
         <a href="">Register</a>
         <a href="">Sign In</a>
       </div>
-
     </header>
 
     <section class="hero">
       <div class="container">
-        <div class="hero__image rotate">
-        </div>
+        <div class="hero__image rotate"></div>
         <div class="hero__text container--pall">
           <h1>
-            Hundreds of flavour <br> under one <span>roof.</span>
+            Hundreds of flavour <br />
+            under one <span>roof.</span>
           </h1>
           <p>
-            Savor the journey of culinary excellence with our extraordinary menu, where every dish is crafted with passion, expertise, and the finest ingredients, delivering an unforgettable dining experience that will tantalize your taste buds and nourish your soul.
+            Savor the journey of culinary excellence with our extraordinary
+            menu, where every dish is crafted with passion, expertise, and the
+            finest ingredients, delivering an unforgettable dining experience
+            that will tantalize your taste buds and nourish your soul.
           </p>
           <div class="hero__btn flex flex-gap flex-jc-c">
             <a href="#" class="button">Order Now</a>
@@ -68,57 +75,375 @@
     <section class="feature">
       <div class="feature__content container container--pall">
         <div class="feature__intro container--pt">
-        <h2>Why Choose Us?</h2>
-        <p>Unparalleled excellence. Memorable moments. <br> Choose us for exceptional flavors and impeccable service that create a truly remarkable dining experience.</p>
+          <h2>Why Choose Us?</h2>
+          <p>
+            Unparalleled excellence. Memorable moments. <br />
+            Choose us for exceptional flavors and impeccable service that create
+            a truly remarkable dining experience.
+          </p>
         </div>
-      <div class="feature__grid">
-        <div class="feature__item">
-          <div class="feature__icon"><img src="/images/icons8-organic-food-100.png" alt=""></div>
-          <div class="feature__title">
-           100% Organic
+        <div class="feature__grid">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="/images/icons8-organic-food-100.png" alt="" />
+            </div>
+            <div class="feature__title">100% Organic</div>
+            <div class="feature__description">
+              Pure flavors. Organic delights. Indulge in our restaurant's
+              exquisite menu, where every dish is a testament to the goodness of
+              nature.
+            </div>
           </div>
-          <div class="feature__description">
-            Pure flavors. Organic delights. Indulge in our restaurant's exquisite menu, where every dish is a testament to the goodness of nature.
-          </div>
-        </div>
-  
-        <div class="feature__item">
-          <div class="feature__icon"><img src="/images/icons8-mobile-order-100.png" alt=""></div>
-          <div class="feature__title">
-            Easy To Order
-          </div>
-          <div class="feature__description">
-            Ordering made easy. Enjoy the convenience of our user-friendly restaurant website, where you can effortlessly browse our menu and place your order with a few simple clicks.
-          </div>
-        </div>
-  
-        <div class="feature__item">
-          <div class="feature__icon"><img src="/images/icons8-delivery-100.png" alt=""></div>
-          <div class="feature__title">
-            Fast Delivery
-          </div>
-          <div class="feature__description">
-            Swift delivery. Delightful moments. Experience the joy of our restaurant's fast and efficient delivery service, ensuring that your favorite dishes arrive promptly at your doorstep.
-          </div>
-        </div>
-      </div>
-      <div class="stats flex flex-jc-c container container--pall">
-        <div>
-          <h3>50+</h3>
-          <p>Food Partners</p>
-        </div>
-        <div>
-          <h3>450+</h3>
-          <p>Trusted Clients</p>
-        </div>
-        <div>
-          <h3>12k+</h3>
-          <p>Orders Online</p>
-        </div>
-      </div>
 
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="/images/icons8-mobile-order-100.png" alt="" />
+            </div>
+            <div class="feature__title">Easy To Order</div>
+            <div class="feature__description">
+              Ordering made easy. Enjoy the convenience of our user-friendly
+              restaurant website, where you can effortlessly browse our menu and
+              place your order with a few simple clicks.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="/images/icons8-delivery-100.png" alt="" />
+            </div>
+            <div class="feature__title">Fast Delivery</div>
+            <div class="feature__description">
+              Swift delivery. Delightful moments. Experience the joy of our
+              restaurant's fast and efficient delivery service, ensuring that
+              your favorite dishes arrive promptly at your doorstep.
+            </div>
+          </div>
+        </div>
+        <div class="stats flex flex-jc-c container container--pall">
+          <div>
+            <h3>50+</h3>
+            <p>Food Partners</p>
+          </div>
+          <div>
+            <h3>450+</h3>
+            <p>Trusted Clients</p>
+          </div>
+          <div>
+            <h3>12k+</h3>
+            <p>Orders Online</p>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
+
+    <section class="menus">
+      <div class="menu__content container container--pall">
+        <div class="menu__intro">
+          <h3>Explore</h3>
+          <h2>Our Delicious Menu</h2>
+        </div>
+        <div class="menu__grid">
+          <div class="menu__item">
+            <div
+              class="menu__image"
+              style="background-image: url(/images/pizza.jpg)"
+            ></div>
+            <div class="menu__text container--pall">
+              <div class="menu__title flex">
+                <h2>Cheese Pizza</h2>
+                <h2>$15</h2>
+              </div>
+              <div class="menu__description container--pb">
+                <p>
+                  Experience pizza perfection with our mouthwatering cheese
+                  pizza. Indulge in a classic favorite crafted with love and
+                  care. Our signature hand-tossed crust is topped with a
+                  generous layer of melty, gooey cheese, creating a perfect
+                  harmony of flavors.
+                </p>
+              </div>
+            </div>
+            <div class="menu__rating flex flex-ai-c flex-jc-sb container--pall">
+              <div class="menu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div
+              class="menu__image"
+              style="background-image: url(/images/butter.jpg)"
+            ></div>
+            <div class="menu__text container--pall">
+              <div class="menu__title flex">
+                <h2>Butter Chicken</h2>
+                <h2>$7</h2>
+              </div>
+              <div class="menu__description container--pb">
+                <p>
+                  Delight in the flavors of our exquisite butter chicken. Tender
+                  pieces of marinated chicken are simmered in a velvety, spiced
+                  tomato-based sauce. This classic Indian dish offers a
+                  harmonious blend of rich, creamy flavors and aromatic spices.
+                </p>
+              </div>
+            </div>
+            <div class="menu__rating flex flex-ai-c flex-jc-sb container--pall">
+              <div class="menu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div
+              class="menu__image"
+              style="background-image: url(/images/sandwich.jpg)"
+            ></div>
+            <div class="menu__text container--pall">
+              <div class="menu__title flex">
+                <h2>Sandwich</h2>
+                <h2>$5</h2>
+              </div>
+              <div class="menu__description container--pb">
+                <p>
+                  Our sandwiches are a culinary delight, meticulously
+                  handcrafted with the finest ingredients. Each bite reveals
+                  layers of flavor, from the freshly baked bread to the premium
+                  meats and cheeses, complemented by a symphony of crisp
+                  vegetables and delectable spreads.
+                </p>
+              </div>
+            </div>
+            <div class="menu__rating flex flex-ai-c flex-jc-sb container--pall">
+              <div class="menu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div
+              class="menu__image"
+              style="background-image: url(/images/alfredo.jpg)"
+            ></div>
+            <div class="menu__text container--pall">
+              <div class="menu__title flex">
+                <h2>Chicken Alfredo</h2>
+                <h2>$20</h2>
+              </div>
+              <div class="menu__description container--pb">
+                <p>
+                  Experience culinary bliss with our delectable chicken Alfredo.
+                  Tender pieces of grilled chicken are nestled in a creamy,
+                  indulgent Alfredo sauce, crafted with the perfect blend of
+                  Parmesan cheese, butter, and garlic.
+                </p>
+              </div>
+            </div>
+            <div class="menu__rating flex flex-ai-c flex-jc-sb container--pall">
+              <div class="menu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div
+              class="menu__image"
+              style="background-image: url(/images/beef.jpg)"
+            ></div>
+            <div class="menu__text container--pall">
+              <div class="menu__title flex">
+                <h2>Beef Burger</h2>
+                <h2>$10</h2>
+              </div>
+              <div class="menu__description container--pb">
+                <p>
+                  Savor the irresistible delight of our beef burger. A juicy,
+                  flavorful patty made from premium beef, perfectly cooked to
+                  your liking. Nestled in a soft, toasted bun and topped with
+                  fresh, crisp ingredients that add a burst of flavor and
+                  texture.
+                </p>
+              </div>
+            </div>
+            <div class="menu__rating flex flex-ai-c flex-jc-sb container--pall">
+              <div class="menu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div
+              class="menu__image"
+              style="background-image: url(/images/burger.jpg)"
+            ></div>
+            <div class="menu__text container--pall">
+              <div class="menu__title flex">
+                <h2>Chicken Burger</h2>
+                <h2>$12</h2>
+              </div>
+              <div class="menu__description container--pb">
+                <p>
+                  Savor the exquisite delight of our chicken burger, a true
+                  masterpiece in flavor and satisfaction. Imagine sinking your
+                  teeth into a perfectly grilled chicken patty, bursting with
+                  juicy tenderness and infused with delightful seasonings.
+                </p>
+              </div>
+            </div>
+            <div class="menu__rating flex flex-ai-c flex-jc-sb container--pall">
+              <div class="menu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>5</span>
+              </div>
+              <a href="#" class="button">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials flex flex-ai-c flex-jc-c">
+      <div class="testimonial container container--pall mySwiper">
+        <div class="testimonial__content swiper-wrapper">
+          <div class="testimonial__slide swiper-slide flex flex-ai-c flex-jc-c">
+            <img src="/images/client1.jpg" alt="" class="testimonial__image" />
+            <p>
+              HungryHub has become my go-to restaurant for a reason. The moment I walked through the door, I was greeted by a warm and inviting ambiance that instantly made me feel at home. The flavors are consistently exceptional, and each dish is prepared with meticulous attention to detail. The staff at HungryHub are friendly and passionate about providing an exceptional dining experience.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="testimonial__details flex-ai-c">
+              <span class="name">Marnie Lotter</span>
+              <br>
+              <div class="testimonial__rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bx-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__slide swiper-slide flex flex-ai-c flex-jc-c">
+            <img src="/images/client2.jpg" alt="" class="testimonial__image" />
+            <p>
+              I can't get enough of HungryHub! The moment I step inside, I'm greeted with a cozy atmosphere and a team of welcoming staff. The menu is a delightful journey of flavors, and each dish is prepared with utmost care. The attention to detail and presentation make every visit feel like a special occasion. HungryHub has truly captured my taste buds and my heart.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="testimonial__details flex-ai-c">
+              <span class="name">Evelyn Baker</span>
+              <br>
+              <div class="testimonial__rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__slide swiper-slide flex flex-ai-c flex-jc-c">
+            <img src="/images/client3.jpg" alt="" class="testimonial__image" />
+            <p>
+              HungryHub exceeded my expectations with their exceptional food and warm hospitality. The menu offered a wide range of delicious options that satisfied my cravings. Making reservations was a breeze, and their attentive staff made my dining experience truly memorable. I can't wait to visit again and indulge in their culinary delights. Highly recommended!
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="testimonial__details flex-ai-c">
+              <span class="name">Robert Collins</span>
+              <br>
+              <div class="testimonial__rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__slide swiper-slide flex flex-ai-c flex-jc-c">
+            <img src="/images/client4.jpg" alt="" class="testimonial__image" />
+            <p>
+              I can't thank HungryHub enough for their exceptional delivery service. They have truly redefined convenience and quality in food delivery. Every time I place an order, I am amazed by the promptness and professionalism of their delivery team. The food arrives hot, fresh, and beautifully packaged, just like it would be served in the restaurant.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="testimonial__details flex-ai-c">
+              <span class="name">Ahmed Hassan</span>
+              <br>
+              <div class="testimonial__rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bx-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__slide swiper-slide flex flex-ai-c flex-jc-c">
+            <img src="/images/client5.jpg" alt="" class="testimonial__image" />
+            <p>
+              Choosing HungryHub for their organic food offerings has been a game-changer for me. As someone who values clean eating and sustainability, I am thrilled to have found a restaurant that shares my passion for organic ingredients. Every bite at HungryHub is a reminder of their dedication to sourcing high-quality, locally-sourced, and organic produce.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="testimonial__details flex-ai-c">
+              <span class="name">Amy Wright </span>
+              <br>
+              <div class="testimonial__rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__next swiper-button-next"></div>
+        <div class="testimonial__prev swiper-button-prev"></div>
+        <div class="testimonial__page swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
