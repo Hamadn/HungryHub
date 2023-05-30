@@ -1,0 +1,133 @@
+@use "../util/" as u;
+
+.footer {
+    background-color: u.$white;
+    position: relative;
+
+    &__content{
+    background-color: u.$white;
+    color: u.$dark;
+    padding: 2.5rem;
+
+
+    @include u.breakpoint-up(large){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr), auto;
+        grid-template-areas: 
+            "logo links1 links2 contact"
+            "social links1 links2 contact"
+            "copyright copyright copyright copyright"
+            ;
+    }
+    }
+
+
+    a{
+        color: u.$dark;
+        font-size: u.$font-med;
+        line-height: 2;
+    }
+
+    h2{
+        color: u.$dark;
+        margin-bottom: 1rem;
+    }
+
+    &__logo{
+        margin-bottom: 1.875rem;
+        display: inline-block;
+
+        @include u.breakpoint-up(large){
+            grid-area: logo;
+        }
+
+
+
+        img{
+            width: 8.8125rem;
+            height:  2rem;
+        }
+    }
+
+    &__social{
+        margin-bottom: 1.875rem;
+
+        @include u.breakpoint-up(large){
+            grid-area: social;
+            align-self: center;
+        }
+
+        a{
+            display: inline-block;
+        }
+        a:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+
+        &.col1{
+            margin-bottom: 1.875rem;
+
+            @include u.breakpoint-up(large){
+                grid-area: links1;
+            }
+
+            a{
+                @include u.breakpoint-up(large){
+                    line-height: 2.6;
+                }  
+            }
+        }
+
+        &.col2{
+            margin-bottom: 1.875rem;
+
+            @include u.breakpoint-up(large){
+                grid-area: links2;
+            }
+        }
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.875rem;
+
+        @include u.breakpoint-up(large){
+            grid-area: contact;
+            line-height: 3.1;
+        }
+
+        img{
+            width: 2rem;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+
+            span{
+                margin-bottom: 0.625rem;
+            }
+            span:nth-child(2){
+                margin-left: 0.625rem;
+            }
+
+
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+
+        @include u.breakpoint-up(large){
+            grid-area: copyright;
+            margin-top: 1.5rem;
+        }
+    }
+}
