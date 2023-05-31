@@ -1,11 +1,11 @@
 @use "../util/" as u;
 
-.menus {
+.popmenus {
     background-color: u.$blackyellow;
 }
 
 
-.menu {
+.popmenu {
 
     &__intro{
         text-align: center;
