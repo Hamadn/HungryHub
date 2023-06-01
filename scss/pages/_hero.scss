@@ -1,5 +1,10 @@
-@use "../util/" as u;
+@use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u. 
 
+
+/*Styling for the hero section*/
+/*Default are the mobile styles*/
+
+/*Added breakpoints and styles for tablet and mobile screens from breakpoints.scss file*/
 .hero {
   overflow: hidden;
 

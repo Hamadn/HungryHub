@@ -1,5 +1,7 @@
-@use "../util/" as u;
+@use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
 
+
+/*Contact Us page styles with different styles for different screens*/
 .contacts {
   display: flex;
   justify-content: center;

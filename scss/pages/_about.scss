@@ -1,10 +1,6 @@
-@use "../util/" as u;
+@use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
-
-
+/*About Us section styles*/
 .about{
     background-color: u.$greenishblack;
 

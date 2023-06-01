@@ -1,5 +1,9 @@
-@use "../util/" as u;
+@use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
 
+
+/*Styling for the features section of the landing page*/
+
+/*Added the styling for tablet and mobile screens from breakpoints.scss file*/
 .feature {
     background-color: u.$lightgrey;
     text-align: center;

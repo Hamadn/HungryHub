@@ -1,15 +1,22 @@
 @use "../util" as u;
 
+/*Boilerplate styles for the website*/
+
+/*Change the box sizing to border box so the margin and padding does not add and increse the size of the element
+ and font size to 100%*/
 html {
   box-sizing: border-box;
   font-size: 100%;
 }
 
+/*Changing the color of the testimonial section arrows*/
 :root {
     --swiper-pagination-color: hsl(45, 94%, 56%);
 }
 
 
+
+/*Removing the default padding and margin from all the elements*/
 *,
 *::before,
 *::after {
@@ -18,6 +25,7 @@ html {
   margin: 0;
 }
 
+/*Body Styles*/
 body {
   font-family: u.$font;
   font-size: u.$font-sm;
@@ -37,6 +45,8 @@ input {
   outline: none;
 }
 
+
+/*Making different classes to use in the html page to make the code more readable */
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -90,6 +100,7 @@ input {
   }
 }
 
+/*Button styles to be used in the website**/
 .button {
   padding: 1rem 1.875rem;
   color: u.$dark !important;
@@ -124,6 +135,8 @@ input {
   background: linear-gradient(45deg, u.$yellow, u.$dark);
 }
 
+
+/*Classes for the responsiveness of the nav bar and hamburger menu*/
 .hide-for-mobile {
   @include u.breakpoint-down(medium) {
     display: none;
