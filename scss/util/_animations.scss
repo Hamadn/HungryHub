@@ -64,6 +64,11 @@
     animation: rotate 10s infinite linear;
 }
 
+
+.rotate_only{
+    animation: rotate 3s infinite linear;
+}
+
 @keyframes cdp-in {
     from {
       transform: scale(1.5);

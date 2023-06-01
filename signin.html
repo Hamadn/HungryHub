@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="overlay has-fade"></div>
+  
+        <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+          <a href="/" class="header__logo">
+            <img src="/images/Logo.svg" alt="HungryHub" />
+          </a>
+          <a href="#" id="hamburgerBtn" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+  
+          <div class="flex flex-gap flex-jc-sb hide-for-mobile">
+            <a href="#" class="button__outline">Register</a>
+            <a href="signin.html" class="button">Sign In</a>
+          </div>
+        </nav>
+  
+        <div class="header__menu has-fade">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Register</a>
+          <a href="signin.html">Sign In</a>
+        </div>
+      </header>
+
+<section class="">
+    <div class="geo__background">
+        <div class="geo__shape rotate_only"></div>
+        <div class="geo__shape rotate_only"></div>
+    </div>
+    <form class="sign">
+        <h3>Login Here</h3>
+
+        <label class="sign__label" for="username">Username</label>
+        <input class="sign__input" type="text" placeholder="Email or Phone" id="username">
+
+        <label class="sign__label" for="password">Password</label>
+        <input class="sign__input" type="password" placeholder="Password" id="password">
+
+        <button class="sign__button button">Log In</button>
+    </form>
+    </section>
+    <script src="/js/index.js"></script>
+</body>
+</html>
