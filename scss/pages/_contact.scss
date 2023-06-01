@@ -5,13 +5,9 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: hsl(225, 13%, 6%);
+  background-color: u.$dark;
 
   @include u.breakpoint-down(medium){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background: u.$yellow;
   }
 
@@ -38,11 +34,11 @@
     @media (max-width: 1200px) {
       width: 90%;
       min-width: auto;
-      margin: 20px;
+      margin: 1.25rem;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     }
 
-    @media (max-width: 991px){
+    @include u.breakpoint-down(medium){
         display: flex;
         flex-direction: column-reverse;
     }
@@ -50,9 +46,9 @@
 
   &__contactInfo {
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
     width: 21.875rem;
-    height: calc(100% - 80px);
+    height: calc(100% - 5rem);
     background: u.$dark;
     z-index: 1;
     padding: 2.5rem;
@@ -68,17 +64,17 @@
       height: 34.375rem;
       position: relative;
       box-shadow: none;
-      border-radius: 0px;
+      border-radius: 0;
     }
 
-    @media (max-width: 991px){
+    @include u.breakpoint-down(medium){
         width: 100%;
         height: auto;
         flex-direction: row;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
-    @media (max-width: 600px){
+    @include u.breakpoint-down(small){
         padding: 1.5625rem;
         flex-direction: column;
         align-items: flex-start;
@@ -102,8 +98,8 @@
         align-items: center;
     }
 
-    @media (max-width: 600px){
-        margin-top: 40px;
+    @include u.breakpoint-down(small){
+        margin-top: 2.5rem;
     }
 
     li {
@@ -168,7 +164,7 @@
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
 
-    @media (max-width: 1200px) {
+    @include u.breakpoint-down(medium) {
       position: relative;
       width: calc(100% - 21.875rem);
       padding-left: 0;
@@ -176,13 +172,13 @@
       padding: 2.5rem;
       height: 34.375rem;
       box-shadow: none;
-      border-radius: 0px;
+      border-radius: 0;
     }
 
     @include u.breakpoint-down(medium){
         width: 100%;
         height: auto;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
     @include u.breakpoint-down(small){
@@ -202,8 +198,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 1.875rem;
-
-    .inputBox {
+  }
+    &__inputBox {
       position: relative;
       margin-bottom: 2.1875rem;
 
@@ -251,6 +247,7 @@
         border: none;
         max-width: 9.375rem;
         padding: 0.75rem;
+        
         &:hover {
           background: linear-gradient(
             45deg,
@@ -262,7 +259,7 @@
         }
       }
     }
-    .inputBox.w50 {
+    &__inputBox.w50 {
       width: 47%;
 
       @include u.breakpoint-down(small) {
@@ -270,8 +267,7 @@
       }
     }
 
-    .inputBox.w100 {
+    &__inputBox.w100 {
       width: 100%;
     }
-  }
 }
