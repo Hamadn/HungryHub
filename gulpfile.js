@@ -10,7 +10,6 @@ function scssTask(){
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('dist', {sourcemaps: '.'}));
-    scssTask();
 }
 
 exports.default = series(scssTask);
