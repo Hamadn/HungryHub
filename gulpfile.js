@@ -14,3 +14,5 @@ function scssTask(){
 }
 
 exports.default = series(scssTask);
+
+exports.build = series(scssTask);
