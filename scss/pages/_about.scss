@@ -1,0 +1,55 @@
+@use "../util/" as u;
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+
+
+.about{
+    background-color: u.$greenishblack;
+
+
+    &__heading{
+      text-align: center;
+    }
+
+    &__heading-1{
+      color: u.$white;
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-family: u.$font-mon;
+    }
+
+    &__heading--2{
+      font-size: u.$font-med;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: u.$font-mon;
+      color: u.$white;
+      padding-bottom: 0.625rem;
+
+    }
+
+    &__heading-3{
+      text-align: center;
+      font-size: u.$font-lg;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: u.$font-mon;
+      color: u.$white;
+      margin-top: 6.25rem;
+      padding-bottom: 0.625rem;
+    }
+
+    &__content{
+      color: hsl(0, 0%, 60%);
+      font-size: 1rem;
+      letter-spacing: 0.0625rem;
+      text-align: center;
+      line-height: 1.9375rem;
+      z-index: 3;
+      max-width: 58rem;
+      padding: 0 1.5rem;
+    }
+}
+
