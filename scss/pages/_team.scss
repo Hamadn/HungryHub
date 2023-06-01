@@ -1,0 +1,112 @@
+@use "../util/" as u;
+
+.teams{
+    background-color: u.$lightgrey; 
+}
+
+
+.team{
+    background: transparent;
+
+
+    &__our-team{
+        padding: 20px 15px 30px;
+        background: transparent;
+        border-radius: 15px;
+        text-align: center;
+        border:1px solid u.$yellow;
+
+        &:hover{
+            transition: .5s;
+            box-shadow: 0px 1px 5px 0px #d1d1d1;
+
+            .team__pic{
+                background: u.$lightyellow;
+                border-radius: 50%;
+            }
+
+            .team__social{
+
+                a{
+                    background: u.$yellow;
+                    color: u.$dark;
+                }
+            }
+
+        }
+    }
+
+    &__row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        align-items: center;
+        justify-content: center;
+
+
+        @include u.breakpoint-up(medium){
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+
+        @include u.breakpoint-up(large){
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+
+    &__pic{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: u.$white;
+        padding: 5px;
+        margin-bottom: 25px;
+        transition: all 0.5s ease 0s;
+        border-radius: 50%;
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }   
+    &__title{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: u.$white;
+        text-transform: uppercase;
+        margin: 0 0 7px 0;
+    }
+    &__post{
+        display: block;
+        font-size: 15px;
+        color: u.$yellow;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__social{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li{
+            display: inline-block;
+            margin-right: 5px;
+
+            a{
+                display: block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                font-size: 15px;
+                color: u.$yellow;
+                border: 1px solid u.$yellow;
+                transition: all 0.5s ease 0s;
+            }
+        }
+    }
+}
+   
