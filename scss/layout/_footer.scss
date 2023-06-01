@@ -2,7 +2,6 @@
 
 .footer {
     background-color: u.$white;
-    position: relative;
 
     &__content{
     background-color: u.$white;
@@ -79,7 +78,7 @@
 
             a{
                 @include u.breakpoint-up(large){
-                    line-height: 2.6;
+                    line-height: 3.6;
                 }  
             }
         }
