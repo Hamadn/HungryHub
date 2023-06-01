@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay has-fade"></div>
+
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="/images/Logo.svg" alt="HungryHub" />
+        </a>
+        <a href="#" id="hamburgerBtn" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="header__links hide-for-mobile">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="flex flex-gap flex-jc-sb hide-for-mobile">
+          <a href="#" class="button__outline">Register</a>
+          <a href="signin.html" class="button">Sign In</a>
+        </div>
+      </nav>
+
+      <div class="header__menu has-fade">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Register</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </header>
+
+    <section class="popmenus">
+      <div class="popmenu__content container container--pall">
+        <div class="popmenu__intro">
+          <h3>Explore</h3>
+          <h2>Our Delicious Menu</h2>
+        </div>
+        <div
+          id="paginated-list"
+          data-current-page="1"
+          aria-live="polite"
+          class="popmenu__grid"
+        >
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/pizza.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Cheese Pizza</h2>
+                <h2>$15</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Experience pizza perfection with our mouthwatering cheese
+                  pizza. Indulge in a classic favorite crafted with love and
+                  care. Our signature hand-tossed crust is topped with a
+                  generous layer of melty, gooey cheese, creating a perfect
+                  harmony of flavors.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/butter.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Butter Chicken</h2>
+                <h2>$7</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Delight in the flavors of our exquisite butter chicken. Tender
+                  pieces of marinated chicken are simmered in a velvety, spiced
+                  tomato-based sauce. This classic Indian dish offers a
+                  harmonious blend of rich, creamy flavors and aromatic spices.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/sandwich.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Sandwich</h2>
+                <h2>$5</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Our sandwiches are a culinary delight, meticulously
+                  handcrafted with the finest ingredients. Each bite reveals
+                  layers of flavor, from the freshly baked bread to the premium
+                  meats and cheeses, complemented by a symphony of crisp
+                  vegetables and delectable spreads.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/alfredo.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Chicken Alfredo</h2>
+                <h2>$20</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Experience culinary bliss with our delectable chicken Alfredo.
+                  Tender pieces of grilled chicken are nestled in a creamy,
+                  indulgent Alfredo sauce, crafted with the perfect blend of
+                  Parmesan cheese, butter, and garlic.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/beef.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Beef Burger</h2>
+                <h2>$10</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Savor the irresistible delight of our beef burger. A juicy,
+                  flavorful patty made from premium beef, perfectly cooked to
+                  your liking. Nestled in a soft, toasted bun and topped with
+                  fresh, crisp ingredients that add a burst of flavor and
+                  texture.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/burger.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Chicken Burger</h2>
+                <h2>$12</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Savor the exquisite delight of our chicken burger, a true
+                  masterpiece in flavor and satisfaction. Imagine sinking your
+                  teeth into a perfectly grilled chicken patty, bursting with
+                  juicy tenderness and infused with delightful seasonings.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>5</span>
+              </div>
+              <a href="#" class="button">Add to Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/ribs.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>BBQ Ribs</h2>
+                <h2>$20</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Indulge in a mouthwatering delight with our Smoky BBQ Ribs.
+                  Our expert chefs slow-cook tender ribs to perfection, ensuring
+                  they are fall-off-the-bone tender and packed with smoky
+                  flavor.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/panini.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Caprese Panini</h2>
+                <h2>$10</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  This classic sandwich is a delightful fusion of fresh
+                  ingredients and Mediterranean charm. Sliced vine-ripened
+                  tomatoes, creamy mozzarella cheese, and fragrant basil leaves
+                  come together to create a symphony of flavors and textures.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/shakshuka.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Shakshuka</h2>
+                <h2>$25</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Our Shakshuka features a tantalizing blend of gently simmered
+                  tomatoes, fragrant spices, and perfectly poached eggs. The
+                  velvety tomato base is infused with aromatic cumin, paprika,
+                  and chili flakes, creating a symphony of flavors that will
+                  delight your taste buds.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/tacos.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Mexican Tacos</h2>
+                <h2>$15</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Experience the vibrant flavors of Mexico with our authentic,
+                  handcrafted tacos. Indulge in tender Carne Asada, crispy Baja
+                  Fish, or flavorful Veggie options. Savor the
+                  melt-in-your-mouth Carnitas.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/biryani.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Biryani</h2>
+                <h2>$10</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Savor the exquisite flavors of Biryani at our restaurant.
+                  Fragrant Basmati rice infused with aromatic spices and tender
+                  meats or vegetables. A culinary masterpiece that transports
+                  you to the streets of India with every heavenly bite.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/lava.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Lava Cake</h2>
+                <h2>$5</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Indulge in our signature Lava Cake—a rich, dense chocolate
+                  cake with a molten, gooey chocolate center that oozes with
+                  every bite. Served warm, it's a decadent delight that's
+                  perfect for chocolate lovers.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/profiteroles.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Profiteroles</h2>
+                <h2>$10</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Experience the delicate elegance of our Profiteroles. These
+                  light and airy choux pastry puffs are filled with luscious
+                  vanilla or chocolate pastry cream. With each bite, you'll
+                  discover a perfect balance of textures and flavors..
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/cheese.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Cheese Cake</h2>
+                <h2>$15</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Indulge in our creamy Cheesecake, a perfect harmony of smooth
+                  texture, tangy flavor, and buttery crust. It's a decadent
+                  delight that will leave you craving more. Treat yourself to a
+                  slice of pure bliss.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>4.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/iced.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Iced Coffee</h2>
+                <h2>$5</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Cool down with our invigorating iced coffee, brewed to
+                  perfection and served over ice. Whether you prefer it black,
+                  with milk, or flavored with a hint of vanilla or caramel, it's
+                  a satisfying pick-me-up.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/hot.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Hot Chocolate</h2>
+                <h2>$7</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Indulge in the comforting embrace of our Hot Chocolate. Made
+                  with the finest quality cocoa, our hot chocolate is a velvety
+                  blend of rich, creamy goodness that will warm your heart and
+                  delight your taste buds.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/herbal.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Herbal Tea</h2>
+                <h2>$15</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Discover serenity with our Herbal Infusions. Crafted from the
+                  finest aromatic herbs, these all-natural blends offer soothing
+                  flavors and therapeutic benefits. Embrace tranquility sip by
+                  sip and indulge in a moment of pure relaxation.
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star-half"></i></span>
+                <span>3.5</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+          <div class="popmenu__item">
+            <div
+              class="popmenu__image"
+              style="background-image: url(/images/fruit.jpg)"
+            ></div>
+            <div class="popmenu__text container--pall">
+              <div class="popmenu__title flex">
+                <h2>Fruit Smoothie</h2>
+                <h2>$15</h2>
+              </div>
+              <div class="popmenu__description container--pb">
+                <p>
+                  Experience fruity bliss with our refreshing Fruit Smoothies.
+                  Made with fresh, seasonal fruits, creamy yogurt, and a touch
+                  of sweetness, they're the perfect way to invigorate your day.
+                  Sip and savor the deliciousness!
+                </p>
+              </div>
+            </div>
+            <div
+              class="popmenu__rating flex flex-ai-c flex-jc-sb container--pall"
+            >
+              <div class="popmenu__stars">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span>4</span>
+              </div>
+              <a href="#" class="button">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="pagination-container container container--pall">
+      <button
+        class="pagination-button"
+        id="prev-button"
+        title="Previous page"
+      >
+        &lt;
+      </button>
+
+      <div id="pagination-numbers"></div>
+
+      <button
+        class="pagination-button"
+        id="next-button"
+        title="Next page"
+      >
+        &gt;
+      </button>
+    </nav>
+
+    
+    <footer class="footer">
+      <div class="footer__content container container--pall">
+        <a href="#" class="footer__logo">
+          <img src="/images/Black logo - no background.svg" alt="" />
+        </a>
+
+        <div class="footer__social">
+          <a href="#">
+            <img src="/images/1.png" alt="Facebook" />
+          </a>
+          <a href="#">
+            <img src="/images/2.png" alt="Twitter" />
+          </a>
+          <a href="#">
+            <img src="/images/3.png" alt="Instagram" />
+          </a>
+          <a href="#">
+            <img src="/images/4.png" alt="Pinterest" />
+          </a>
+        </div>
+
+        <div class="footer__links col1">
+          <h2>Quick Links</h2>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer__links col2">
+          <h2>Menu</h2>
+          <a href="menu.html">Burgers</a>
+          <a href="menu.html">Sandwiches</a>
+          <a href="menu.html">Desserts</a>
+          <a href="menu.html">Pizzas</a>
+          <a href="menu.html">Drinks</a>
+        </div>
+
+        <div class="footer__contact">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <span><img src="/images/location.png" alt="" /></span>
+              <span>26 Al Woushar Street,Dubai, UAE,11472</span>
+            </li>
+            <li>
+              <span><img src="/images/call.png" alt="" /></span>
+              <span>702-279-3488</span>
+            </li>
+            <li>
+              <span><img src="/images/mail.png" alt="" /></span>
+              <span>nhamad919@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright">
+          &copy; HungryHub, All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/pagination.js"></script>
+  </body>
+</html>
