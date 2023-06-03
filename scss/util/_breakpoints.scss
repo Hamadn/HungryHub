@@ -13,13 +13,13 @@ $breakpoints-down: (
   "large": 89.875em,
 );
 
-
+// Mixins for min-width 
 @mixin breakpoint-up($size) {
   @media (min-width: map-get($breakpoints-up, $size)) {
     @content;
   }
 }
-
+//Mixins for max-width
 @mixin breakpoint-down($size) {
   @media (max-width: map-get($breakpoints-down, $size)) {
     @content;

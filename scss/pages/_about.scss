@@ -1,8 +1,9 @@
 @use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
 
 /*About Us section styles*/
+/*Used BEM naming convetion for the code to look more readeble and organized*/
 .about{
-    background-color: u.$greenishblack;
+    background-color: u.$greenishblack; // Took the colors from the colors.scss file in util folder
 
 
     &__heading{
@@ -10,29 +11,29 @@
     }
 
     &__heading-1{
-      color: u.$white;
+      color: u.$white; // Took the colors from the colors.scss file in util folder
       font-size: 2.5rem;
       font-weight: 600;
-      font-family: u.$font-mon;
+      font-family: u.$font-mon; // Took the font-style from the fonts.scss file in util folder
     }
 
     &__heading--2{
-      font-size: u.$font-med;
+      font-size: u.$font-med; // Took the font-size from the fonts.scss file in util folder
       font-weight: 600;
       text-transform: uppercase;
-      font-family: u.$font-mon;
-      color: u.$white;
+      font-family: u.$font-mon; // Took the font-style from the fonts.scss file in util folder
+      color: u.$white; // Took the colors from the colors.scss file in util folder
       padding-bottom: 0.625rem;
 
     }
 
     &__heading-3{
       text-align: center;
-      font-size: u.$font-lg;
+      font-size: u.$font-lg; // Took the font-size from the font.scss file in util folder
       font-weight: 600;
       text-transform: uppercase;
-      font-family: u.$font-mon;
-      color: u.$white;
+      font-family: u.$font-mon; // Took the font-style from the fonts.scss file in util folder
+      color: u.$white; // Took the colors from the colors.scss file in util folder
       margin-top: 6.25rem;
       padding-bottom: 0.625rem;
     }

@@ -5,7 +5,7 @@
 
 /*Added the styling for tablet and mobile screens from breakpoints.scss file*/
 .feature {
-    background-color: u.$lightgrey;
+    background-color: u.$lightgrey; // Took the colors from the colors.scss file in util folder
     text-align: center;
 
     &__intro {
@@ -15,6 +15,7 @@
     &__grid {
         gap: 25px;
 
+        /*Styling for tablet devices*/
         @include u.breakpoint-up(medium){
             display: grid;
             grid-template-columns: repeat(3,auto);
@@ -24,10 +25,11 @@
     &__item {
         padding: 1.5rem;
         border-radius: 15px;
-        background-color: u.$dark;
-        border: 1px solid u.$lightyellow;
-        background: linear-gradient(45deg, u.$grayishblack, u.$blackyellow);
+        background-color: u.$dark; // Took the colors from the colors.scss file in util folder
+        border: 1px solid u.$lightyellow; // Took the colors from the colors.scss file in util folder
+        background: linear-gradient(45deg, u.$grayishblack, u.$blackyellow); // Took the colors from the colors.scss file in util folder
 
+        /*Styling for mobile devices*/
         @include u.breakpoint-down(small){
             &:not(:last-child){
                 margin-bottom: 2rem;
@@ -40,6 +42,7 @@
     &__icon {
         margin-bottom: 1.8rem;
 
+        /*Styling for desktop*/
         @include u.breakpoint-up(large){
             margin-bottom: 2.5rem;
         }
@@ -52,6 +55,7 @@
         line-height: 1.15;
         margin-bottom: 1rem;
 
+        /*Styling for desktop*/
         @include u.breakpoint-up(large){
             font-size: 2.1rem;
         }

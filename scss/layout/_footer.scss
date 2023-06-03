@@ -8,14 +8,14 @@
 /*Default mobile styles*/
 
 .footer {
-    background-color: u.$white;
+    background-color: u.$white; // Took the colors from the colors.scss file in util folder
 
     &__content{
-    background-color: u.$white;
-    color: u.$dark;
+    background-color: u.$white; // Took the colors from the colors.scss file in util folder
+    color: u.$dark; // Took the colors from the colors.scss file in util folder
     padding: 2.5rem;
 
-
+    /*Styling for desktop*/
     @include u.breakpoint-up(large){
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -30,13 +30,13 @@
 
 
     a{
-        color: u.$dark;
-        font-size: u.$font-med;
+        color: u.$dark; // Took the colors from the colors.scss file in util folder
+        font-size: u.$font-med; // Took thefont-size from the fonts.scss file in util folder
         line-height: 2;
     }
 
     h2{
-        color: u.$dark;
+        color: u.$dark; // Took the colors from the colors.scss file in util folder
         margin-bottom: 1rem;
     }
 
@@ -79,6 +79,7 @@
         &.col1{
             margin-bottom: 1.875rem;
 
+            /*Styling for desktop*/
             @include u.breakpoint-up(large){
                 grid-area: links1;
             }
@@ -93,6 +94,7 @@
         &.col2{
             margin-bottom: 1.875rem;
 
+            /*Styling for desktop*/
             @include u.breakpoint-up(large){
                 grid-area: links2;
             }
@@ -104,6 +106,7 @@
         flex-direction: column;
         margin-bottom: 1.875rem;
 
+         /*Styling for desktop*/
         @include u.breakpoint-up(large){
             grid-area: contact;
             line-height: 3.1;
@@ -131,6 +134,7 @@
     &__copyright{
         text-align: center;
 
+        /*Styling for desktop*/
         @include u.breakpoint-up(large){
             grid-area: copyright;
             margin-top: 1.5rem;

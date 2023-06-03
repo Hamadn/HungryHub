@@ -36,11 +36,13 @@ body {
   padding: 0;
   color: u.$white;
 
+  /*Styles for desktop*/
   @include u.breakpoint-up(large){
     font-size: u.$font-med;
   }
 }
 
+/*Styles for input*/
 input {
   outline: none;
 }
@@ -136,7 +138,7 @@ input {
 }
 
 
-/*Classes for the responsiveness of the nav bar and hamburger menu*/
+/*Classes for the responsiveness of the nav bar and hamburger menu in tablet and mobile device*/
 .hide-for-mobile {
   @include u.breakpoint-down(medium) {
     display: none;

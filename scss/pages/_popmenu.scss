@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .popmenus {
-    background-color: u.$blackyellow;
+    background-color: u.$blackyellow; // Took the colors from the colors.scss file in util folder
 }
 
 
@@ -9,11 +9,11 @@
 
     &__intro{
         text-align: center;
-        font-family: u.$font-cav;
+        font-family: u.$font-cav; // Took the font-style from the fonts.scss file in util folder
 
 
         h3 {
-            color: u.$yellow;
+            color: u.$yellow; // Took the colors from the colors.scss file in util folder
         }
 
 
@@ -23,13 +23,14 @@
         display: grid;
         gap: 3rem;
 
-
+        // Styles for tablet
         @include u.breakpoint-up(medium){
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(3,1fr);
         }
         
+        // Styles for desktop
         @include u.breakpoint-up(large){
             display: grid;
             grid-template-columns: repeat(3,auto);
@@ -42,7 +43,7 @@
     &__item{
         border-radius: 20px 20px 10px 10px;
         overflow: hidden;
-        border: 1px solid u.$lightyellow;
+        border: 1px solid u.$lightyellow; // Took the colors from the colors.scss file in util folder
         display: grid;
         grid-template-rows: auto 1fr auto;
     }
@@ -54,7 +55,7 @@
     }
 
     &__text{
-        background-color: u.$grayishblack;
+        background-color: u.$grayishblack; // Took the colors from the colors.scss file in util folder
         height: 17.5rem;
 
         @include u.breakpoint-up(large){
@@ -64,25 +65,25 @@
 
     &__title{
         justify-content: space-between;
-        font-family: u.$font-mon;
+        font-family: u.$font-mon; // Took the font-style  from the fonts.scss file in util folder
 
         h2 {
-            color: u.$white;
+            color: u.$white; // Took the colors from the colors.scss file in util folder
         }
         h2:nth-child(2) {
-            color: u.$yellow;
+            color: u.$yellow; // Took the colors from the colors.scss file in util folder
         }
     }
     &__description{
-        font-family: u.$font-mon;
+        font-family: u.$font-mon;// Took the font-style from the fonts.scss file in util folder
     }
     &__rating{
-        background-color: u.$grayishblack;
+        background-color: u.$grayishblack; // Took the colors from the colors.scss file in util folder
     }
     &__stars{
         
         span:not(:last-child) {
-            color: u.$yellow;
+            color: u.$yellow; // Took the colors from the colors.scss file in util folder
         }
 
     }

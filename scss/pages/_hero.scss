@@ -9,6 +9,8 @@
   overflow: hidden;
 
   .container {
+
+    // Styles for desktop
     @include u.breakpoint-up(large) {
       display: grid;
       position: relative;
@@ -21,10 +23,11 @@
     position: relative;
     min-height: 22rem;
 
+    // Styles for tablet devices
     @include u.breakpoint-up(medium) {
       height: 32rem;
     }
-
+    // Styles for destop
     @include u.breakpoint-up(large) {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -41,10 +44,12 @@
       background-repeat: no-repeat;
       background-position: center center;
 
+      // Styles for tablet devices
       @include u.breakpoint-up(medium) {
         background-size: 46%;
       }
 
+      // Styles for desktop
       @include u.breakpoint-up(large) {
         background-size: 30%;
         background-position: center center;
@@ -73,6 +78,7 @@
   &__text {
     text-align: center;
 
+    // Styles for desktop
     @include u.breakpoint-up(large) {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -81,12 +87,14 @@
     }
 
     span {
-      font-family: u.$font-cav;
-      color: u.$yellow;
+      font-family: u.$font-cav; // Took the font-style from the fonts.scss file in util folder
+      color: u.$yellow; // Took the colors from the colors.scss file in util folder
     }
   }
   
   &__btn {
+
+    /*Styles for desktop*/
     @include u.breakpoint-up(large) {
       justify-content: start;
     }

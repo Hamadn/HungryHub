@@ -1,3 +1,4 @@
+// Animation keyframes and classes for the toggle menu and overlay behind it.
 .has-fade {
     visibility: hidden;
 }
@@ -40,6 +41,7 @@
     animation: fade-out 200ms ease-in-out forwards;
 }
 
+// Animation keyframes for the rotating plate on landing page and the rotating disks in th signin page
 @keyframes rotate {
     from {
         filter: drop-shadow(10px 5px 3px black);
@@ -68,14 +70,3 @@
 .rotate_only{
     animation: rotate 3s infinite linear;
 }
-
-@keyframes cdp-in {
-    from {
-      transform: scale(1.5);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }

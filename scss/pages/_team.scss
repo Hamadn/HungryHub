@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .teams{
-    background-color: u.$lightgrey; 
+    background-color: u.$lightgrey; // Took the colors from the colors.scss file in util folder
 }
 
 
@@ -14,22 +14,22 @@
         background: transparent;
         border-radius: 15px;
         text-align: center;
-        border:1px solid u.$yellow;
+        border:1px solid u.$yellow; // Took the colors from the colors.scss file in util folder
 
         &:hover{
             transition: .5s;
             box-shadow: 0px 1px 5px 0px #d1d1d1;
 
             .team__pic{
-                background: u.$lightyellow;
+                background: u.$lightyellow; // Took the colors from the colors.scss file in util folder
                 border-radius: 50%;
             }
 
             .team__social{
 
                 a{
-                    background: u.$yellow;
-                    color: u.$dark;
+                    background: u.$yellow; // Took the colors from the colors.scss file in util folder
+                    color: u.$dark; // Took the colors from the colors.scss file in util folder
                 }
             }
 
@@ -43,12 +43,13 @@
         align-items: center;
         justify-content: center;
 
-
+        // Styles for tablet
         @include u.breakpoint-up(medium){
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
         }
 
+        // Styles for desktop
         @include u.breakpoint-up(large){
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: 1fr;
@@ -59,7 +60,7 @@
         display: inline-block;
         width: 100%;
         height: 100%;
-        background: u.$white;
+        background: u.$white; // Took the colors from the colors.scss file in util folder
         padding: 5px;
         margin-bottom: 25px;
         transition: all 0.5s ease 0s;
@@ -75,14 +76,14 @@
         display: block;
         font-size: 20px;
         font-weight: 600;
-        color: u.$white;
+        color: u.$white; // Took the colors from the colors.scss file in util folder
         text-transform: uppercase;
         margin: 0 0 7px 0;
     }
     &__post{
         display: block;
         font-size: 15px;
-        color: u.$yellow;
+        color: u.$yellow; // Took the colors from the colors.scss file in util folder
         text-transform: uppercase;
         margin-bottom: 15px;
     }
@@ -102,8 +103,8 @@
                 line-height: 30px;
                 border-radius: 50%;
                 font-size: 15px;
-                color: u.$yellow;
-                border: 1px solid u.$yellow;
+                color: u.$yellow; // Took the colors from the colors.scss file in util folder
+                border: 1px solid u.$yellow; // Took the colors from the colors.scss file in util folder
                 transition: all 0.5s ease 0s;
             }
         }

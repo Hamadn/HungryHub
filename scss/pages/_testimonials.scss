@@ -2,7 +2,7 @@
 
 .testimonials {
   width: 100%;
-  background-color: u.$greenishblack;
+  background-color: u.$greenishblack; // Took the colors from the colors.scss file in util folder
 }
 
 .testimonial {
@@ -17,7 +17,7 @@
     object-fit: cover;
     object-position: 40% center;
     border-radius: 50%;
-    border: 4px solid u.$yellow;
+    border: 4px solid u.$yellow; // Took the colors from the colors.scss file in util folder
   }
 
   &__slide {
@@ -27,15 +27,15 @@
     p {
       padding: 0 100px;
       text-align: center;
-      font-size: u.$font-med;
+      font-size: u.$font-med; // Took the font-size from the fonts.scss file in util folder
       font-weight: 400;
-      color: u.$white;
-      font-family: u.$font-mon;
+      color: u.$white; // Took the colors from the colors.scss file in util folder
+      font-family: u.$font-mon;  // Took the font-size from the fonts.scss file in util folder
     }
 
     .quote-icon {
       font-size: 30px;
-      color: u.$yellow;
+      color: u.$yellow; // Took the colors from the colors.scss file in util folder
     }
   }
   &__details {
@@ -43,22 +43,22 @@
     flex-direction: column;
 
     .name {
-      font-size: u.$font-med;
+      font-size: u.$font-med;  // Took the font-size from the fonts.scss file in util folder
       font-weight: 600;
-      color: u.$white;
-      font-family: u.$font-mon;
+      color: u.$white; // Took the colors from the colors.scss file in util folder
+      font-family: u.$font-mon;  // Took the font-style from the fonts.scss file in util folder
     }
   }
   &__rating {
-    color: u.$yellow;
-    font-size: u.$font-med;
+    color: u.$yellow; // Took the colors from the colors.scss file in util folder
+    font-size: u.$font-med;  // Took the font-size from the fonts.scss file in util folder
   }
 
   &__next{
-    color: u.$yellow;
+    color: u.$yellow; // Took the colors from the colors.scss file in util folder
   }
 
   &__prev{
-    color: u.$yellow;
+    color: u.$yellow; // Took the colors from the colors.scss file in util folder
   }
 }

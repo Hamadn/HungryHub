@@ -16,7 +16,7 @@
         width: 200px;
         position: absolute;
         border-radius: 50%;
-        background: linear-gradient(45deg,u.$dark,u.$yellow, hsl(35, 88%, 52%));
+        background: linear-gradient(45deg,u.$dark,u.$yellow, hsl(35, 88%, 52%)); // Took the colors from the colors.scss file in util folder
         
         
         &:first-child{
@@ -48,8 +48,7 @@
 
 
     *{
-        font-family: 'Poppins',sans-serif;
-        color: u.$white;
+        color: u.$white; // Took the colors from the colors.scss file in util folder
         letter-spacing: 0.5px;
         outline: none;
         border: none;
@@ -87,14 +86,15 @@
 
 
         &:focus{
-            border: 2px solid u.$lightyellow;
+        font-family: 'Poppins',sans-serif;
+        border: 2px solid u.$lightyellow; 
         }
     }
 
     &__button{
         margin-top: 50px;
         width: 100%;
-        background-color: u.$yellow;
+        background-color: u.$yellow; // Took the colors from the colors.scss file in util folder
         color: #080710;
         padding: 15px 0;
         font-size: 18px;

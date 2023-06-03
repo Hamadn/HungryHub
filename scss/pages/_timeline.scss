@@ -15,6 +15,7 @@
       height: 100%;
       background-color: hsl(0, 0%, 30%);
 
+      // Styles for desktop
       @include u.breakpoint-up(large){
         left: 50%;
         margin-left: -0.125rem;
@@ -40,6 +41,7 @@
                 content: '';
                 right: 40%;
                 
+                // Styles for desktop
                 @include u.breakpoint-up(large){
                     left: inherit;
                 }
@@ -48,7 +50,7 @@
         }
         
         .timeline__date{
-            background-color: u.$yellow;
+            background-color: u.$yellow; // Took the colors from the colors.scss file in util folder
         }
 
     }
@@ -70,7 +72,7 @@
             }
 
             .timeline__content{
-                background-color: u.$yellow;
+                background-color: u.$yellow; // Took the colors from the colors.scss file in util folder
 
                 &::before{
                     background-color: hsl(0, 0%, 30%);
@@ -78,7 +80,7 @@
             }
 
             .timeline__description{
-                color: u.$white;
+                color: u.$white; // Took the colors from the colors.scss file in util folder
             }
         }
 
@@ -87,21 +89,21 @@
         }
         
         .timeline__content{
-            background-color: u.$yellow;
+            background-color: u.$yellow; // Took the colors from the colors.scss file in util folder
     
             &::before{
                 background-color: hsl(0, 0%, 30%);
             }
         }
         .timeline__description{
-            color: u.$white;
+            color: u.$white; // Took the colors from the colors.scss file in util folder
         }
 
     }
   }
 
   &__station{
-      background-color: u.$yellow;
+      background-color: u.$yellow; // Took the colors from the colors.scss file in util folder
       width: 2.5rem;
       height: 2.5rem;
       position: absolute;
@@ -113,7 +115,7 @@
       border: 4px solid hsl(0, 0%, 30%);
       transition: all .3s ease-out;
 
-
+      // Styles for desktop
       @include u.breakpoint-up(large){
         left: 50%;
         margin-left: -1.875rem;
@@ -126,14 +128,14 @@
 
   &__content{
       width: 80%;
-      background: u.$white;
+      background: u.$white; // Took the colors from the colors.scss file in util folder
       border: 4px solid hsl(0, 0%, 30%);
       padding: 1.25rem 1.875rem;
       border-radius: 6px;
       float: right;
       transition: all .3s ease-out;
 
-
+      // Styles for desktop
       @include u.breakpoint-up(large){
         width: 40%;
         float: inherit;
@@ -151,7 +153,7 @@
           z-index: -1;
           transition: all .3s ease-out;
 
-
+          // Styles for desktop
           @include u.breakpoint-up(large){
             left: 40%;
             top: 1.875rem;
@@ -166,7 +168,7 @@
       padding: 0.5rem 0.75rem;
       font-size: u.$font-med;
       margin-bottom: 0.625rem;
-      background-color: u.$yellow;
+      background-color: u.$yellow; // Took the colors from the colors.scss file in util folder
       color: hsl(0, 0%, 30%);
       display: inline-block;
       border-radius: 4px;
@@ -176,11 +178,12 @@
   &__description{
       margin: 0;
       padding: 0;
-      font-size: u.$font-med;
+      font-size: u.$font-med; // Took the font-size from the fonts.scss file in util folder
       line-height: 1.5rem;
       font-weight: 300;
       color: hsl(0, 0%, 30%);
 
+      // Styles for desktop
       @include u.breakpoint-up(large){
         font-size: 1.1875rem;
         line-height: 1.75rem;

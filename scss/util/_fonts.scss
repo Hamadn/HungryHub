@@ -1,3 +1,4 @@
+// Importing fonts from google fonts api
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -10,10 +11,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
+// Storing different font-styles in variables to be used later in the code
 $font: 'Roboto', sans-serif;
 $font-cav: 'Caveat', cursive;
 $font-mon: 'Montserrat', sans-serif;
 
+// Storing different font-sizes in variables to be used later in the code
 $font-xsm: 0.75rem;
 $font-sm: 0.875rem;
 $font-med: 1.125rem;

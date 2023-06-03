@@ -15,6 +15,7 @@ h1 {
   font-size: 2.31rem;
   margin-bottom: 1.5rem;
 
+  /*Styling for desktop*/
   @include u.breakpoint-up(large) {
     font-size: u.$font-xlg;
   }
@@ -23,6 +24,7 @@ h2 {
   font-size: 1.875rem;
   margin-bottom: 1.5625rem;
 
+  /*Styling for desktop*/
   @include u.breakpoint-up(large) {
     font-size: 2.25rem;
     margin-bottom: 2.25rem;

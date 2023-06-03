@@ -1,3 +1,4 @@
+// Javascript code for the swiperjs library slide in the testimnonial section
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
