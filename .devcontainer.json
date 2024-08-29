@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/javascript-node",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {}
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  }
+}
